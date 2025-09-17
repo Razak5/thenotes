@@ -15,7 +15,6 @@ console_command = 'php /var/www/html/artisan tinker'
 [env]
   APP_ENV = "production"
   DB_CONNECTION = "pgsql"
-  DATABASE_URL="${DATABASE_URL}"
   PP_URL = 'https://thenotes.fly.dev'
   LOG_CHANNEL = 'stderr'
   LOG_LEVEL = 'info'
