@@ -15,6 +15,7 @@ console_command = 'php /var/www/html/artisan tinker'
 [env]
   APP_ENV = "production"
   DB_CONNECTION = "pgsql"
+  DATABASE_URL="${DATABASE_URL}"
   PP_URL = 'https://thenotes.fly.dev'
   LOG_CHANNEL = 'stderr'
   LOG_LEVEL = 'info'
@@ -31,7 +32,7 @@ console_command = 'php /var/www/html/artisan tinker'
   processes = ['app']
 
   [deploy]
-  release_command  = "php /var/www/html/artisan migrate --force"
+  release_command = "cd /var/www/html && php artisan migrate --force"
 
 [[vm]]
   memory = '1gb'
