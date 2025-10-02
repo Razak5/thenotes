@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="p-6 text-gray-900">
-                <x-button primary>Hola! This is notes</x-button>
+                <x-button class="bg-pink-900 my-2 ">Hola! This is notes</x-button>
                 <livewire:notes.show-notes lazy />
             </div>
         </div>
